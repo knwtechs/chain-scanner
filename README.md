@@ -1,5 +1,5 @@
-# evm-monitor
-#### <code>evm-monitor</code> is a framework that allows to easily code event-based programs listening an arbitrary EVM compatible blockchain.
+# chain-scanner
+#### <code>chain-scanner</code> is a framework that allows to easily code event-based programs listening an arbitrary EVM compatible blockchain.
 #### It can be used to perform real time monitoring, history searchs, information gathering and many more cases.
 #### I won't add tons of docs just because i've no time for this at all - unfortunately - but i'll try my best.
 
