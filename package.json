@@ -1,0 +1,42 @@
+{
+  "name": "chain-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && node dist/main.js",
+    "build": "tsc && npm run copy-assets && npm run docs-generate",
+    "start": "node dist/main.js",
+    "copy-assets": "ncp config dist/config/",
+    "docs-generate": "npx typedoc"
+  },
+  "author": "Filippo Sofi a.k.a. Kunnow",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mysql": "^2.15.19",
+    "@types/node-fetch": "^3.0.3",
+    "@types/nodemailer": "^6.4.4",
+    "axios": "^0.22.0",
+    "bignumber.js": "^9.0.1",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^10.0.0",
+    "fmin": "0.0.2",
+    "google-it": "^1.6.2",
+    "got": "^9.6.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.2",
+    "ncp": "^2.0.0",
+    "nodemailer": "^6.7.5",
+    "sleep": "^6.3.0",
+    "sqlite3": "^5.0.2",
+    "ts-transformer-keys": "^0.4.3",
+    "typescript": "^4.4.4",
+    "user-agents": "^1.0.792",
+    "web3": "^1.4.0",
+    "web3-providers-ws": "^1.6.0"
+  },
+  "devDependencies": {
+    "typedoc": "^0.22.10"
+  }
+}

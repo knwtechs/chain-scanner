@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "outDir": "dist",
+      "moduleResolution": "Node",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+
+    },
+    "files": [
+      "src/main.ts"
+    ],
+    "include":[
+        "src/tools/*.ts",
+        "src/class/**/*.ts",
+        "src/constant/abis/*.json",
+        "src/constant/*.ts",
+        "src/interfaces/*.ts",
+        "src/migrations/*.ts",
+        "config/*.js",
+    ],
+    "exclude": [
+      "src/class/WebLookup.ts",
+      "./node_modules"
+    ],
+    "assets": [
+      "config/*"
+    ],
+    "typedocOptions": {
+      "entryPoints": [
+        "src/class/base/index.ts",
+        "src/class/entities/index.ts",
+        "src/class/models/index.ts",
+        "src/class/runners/index.ts",
+        "src/class/shapes/index.ts",
+        "src/class/utils/index.ts",
+        "src/interfaces/index.ts"
+      ],
+      "out": "docs"
+  }
+}
